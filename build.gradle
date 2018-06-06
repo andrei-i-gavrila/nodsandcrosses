@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group 'web'
+version '1.0'
+
+sourceCompatibility = 10
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    providedCompile 'javax.servlet:javax.servlet-api:4.0.1'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.39'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.5'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.9.5'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.5'
+    compile group: 'commons-dbutils', name: 'commons-dbutils', version: '1.7'
+    compile group: 'org.mindrot', name: 'jbcrypt', version: '0.4'
+
+}
